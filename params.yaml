@@ -1,0 +1,13 @@
+background_b: 255
+background_g: 255
+background_r: 255
+rosbridge_websocket: {address: '', authenticate: false, port: 9090}
+rosdistro: 'jade
+
+  '
+roslaunch:
+  uris: {host_janga_lenovo_z50_70__40689: 'http://janga-Lenovo-Z50-70:40689/', host_janga_lenovo_z50_70__42009: 'http://janga-Lenovo-Z50-70:42009/'}
+rosversion: '1.11.16
+
+  '
+run_id: 015bdca8-1909-11e6-885d-e4f89c8259a1
