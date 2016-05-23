@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Based on demo found here:
+http://wiki.ros.org/roslibjs/Tutorials/BasicRosFunctionality
+http://wiki.ros.org/roslibjs/Tutorials/BasicRosFunctionality
+-->
+
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!--
+    The next two lines bring in the JavaScript files that support rosbridge integration.
+  -->
+<script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+<script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+
+ <!--Import jQuery before materialize.js-->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body >
+  <div class="row ">
+    <div class="col s6 m4 l2 valign-wrapper">
+      <a class="btn-floating btn-large waves-effect waves-light red" onclick="up()" style="margin:auto"><i class="material-icons">arrow_upward</i></a>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s6 m4 l2">
+      <a class="btn-floating btn-large waves-effect waves-light red left" onclick="left()"><i class="material-icons">arrow_back</i></a>
+      <a class="btn-floating btn-large waves-effect waves-light red right" onclick="right()"><i class="material-icons">arrow_forward</i></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6 m4 l2 valign-wrapper">
+      <a class="btn-floating btn-large waves-effect waves-light red" onclick="down()" style="margin:auto"><i class="material-icons">arrow_downward</i></a>
+    </div>
+  </div>
+
+<img src="http://localhost:8080/stream_viewer?topic=/usb_cam/image_raw"></img>
+
+ <iframe src="http://localhost:8080/stream_viewer?topic=/usb_cam/image_raw" width="640" height="480"></iframe> 
+ 
+ <iframe src="http://localhost:8080/stream_viewer?topic=/usb_cam_1/image_raw" width="640" height="480"></iframe>
+          
+  <script type="text/javascript" src="rostest.js"></script>
+
+
+  
+  
+</body>
+</html>
